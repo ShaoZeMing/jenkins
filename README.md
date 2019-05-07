@@ -6,9 +6,16 @@
 
 ## 生成镜像
 
-```
+```bash
  docker build -t shaozeming/jenknis:node .
 ```
 
 
-## 启动jenkins
+## docker-compose启动jenkins
+
+```bash
+
+  docker-compose build
+  docker-compose up -d
+
+```
