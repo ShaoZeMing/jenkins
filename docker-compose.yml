@@ -5,9 +5,9 @@ services:
     image: shaozeming/jenknis:node
     container_name: jenkins
     volumes:
-    - /Users/shaozeming/Tool/jenkins/home:/var/jenkins_home
-    - /var/run/docker.sock:/var/run/docker.sock
-    - /usr/local/bin/docker:/usr/bin/docker
+    - /Users/shaozeming/Tool/jenkins/home:/var/jenkins_home   # 自行修改目录映射
+    - /var/run/docker.sock:/var/run/docker.sock        # 自行修改docker映射,内部可以使用外部docker进行构建内部程序
+    - /usr/local/bin/docker:/usr/bin/docker            # 自行修改docker映射,内部可以使用外部docker进行构建内部程序
     ports:
     - "18080:8080"
     - "5000:5000"
